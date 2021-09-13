@@ -1,12 +1,12 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  
 }
+/* header style */
 .head-title{
   text-align: center;
 }
-
+/* search & input design */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -30,6 +30,7 @@ body {
   border-radius: 25px;
   margin-left: 25px;
 }
+/* products card designs */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -54,6 +55,8 @@ body {
   width: 150px;
   height: 150px;
 }
+
+/* cart design */
 .cart {
   width: 350px;
   /* border: 1px solid green; */
@@ -67,6 +70,7 @@ body {
   padding-right: 30px;
 }
 
+/* footer style */
 .bottom-style{
   text-align: center;
   color: brown;
@@ -75,6 +79,7 @@ body {
   padding-top: 50px ;
   padding-bottom: 50px;
 }
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;

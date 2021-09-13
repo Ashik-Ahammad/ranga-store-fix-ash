@@ -40,7 +40,7 @@ const addToCart = (id, price) => {
 
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
-  const converted = parseInt(element);
+  const converted = parseFloat(element);
   return converted;
 };
 
@@ -64,15 +64,15 @@ const updateTaxAndCharge = () => {
   const priceConverted = getInputValue("price");
   if (priceConverted > 200) {
     setInnerText("delivery-charge", 30);
-    setInnerText("total-tax", priceConverted.toFixed(2) * 0.2);
+    setInnerText("total-tax", priceConverted * 0.2);
   }
   if (priceConverted > 400) {
     setInnerText("delivery-charge", 50);
-    setInnerText("total-tax", priceConverted.toFixed(2) * 0.3);
+    setInnerText("total-tax", priceConverted * 0.3);
   }
   if (priceConverted > 500) {
     setInnerText("delivery-charge", 60);
-    setInnerText("total-tax", priceConverted.toFixed(2) * 0.4);
+    setInnerText("total-tax", priceConverted * 0.4);
   }
 };
 
@@ -81,5 +81,5 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-  document.getElementById("total").innerText = grandTotal.toFixed(2);
+  document.getElementById("total").innerText = parseFloat(grandTotal.toFixed(2));
 };
