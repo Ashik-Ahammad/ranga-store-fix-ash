@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  
 }
 .head-title{
   text-align: center;
@@ -47,6 +48,7 @@ body {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
   border: 1px solid cyan;
+  background-color:peachpuff;
 }
 .product-image {
   width: 150px;
@@ -63,6 +65,15 @@ body {
 }
 .cart-main {
   padding-right: 30px;
+}
+
+.bottom-style{
+  text-align: center;
+  color: brown;
+  background-color: black;
+  margin-top: 100px;
+  padding-top: 50px ;
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 768px) {
   #all-products {
